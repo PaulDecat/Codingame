@@ -1,6 +1,6 @@
 package main
 
-//  --Variables utilitaires décrivant les commandes
+var i int //  --Variables utilitaires décrivant les commandes
 
 // Chaque déplacement d'une case coûte un point de fatigue
 var MoveUp = uint32(0)
@@ -21,8 +21,9 @@ var currentIndex = -1
 var actions = []uint32{0, 0, 0, 1, 2, 1, 0, 0, 4, 1, 1, 1}
 
 func NextMove(room string) uint32 {
+
 	for i = 0; i < 10; i++ {
-		MoveUp
+		MoveUp = MoveUp
 	}
 	currentIndex++
 
